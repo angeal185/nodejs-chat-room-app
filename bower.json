@@ -1,0 +1,16 @@
+{
+  "name": "chat-app",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "font-awesome": "latest"
+  },
+  "directory": "components",
+  "homepage": "https://angeal185.github.io",
+  "main": "server.js",
+  "moduleType": [
+    "node"
+  ]
+}

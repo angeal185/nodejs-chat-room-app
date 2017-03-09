@@ -1,0 +1,20 @@
+{
+  "name": "chat-app",
+  "version": "0.0.1",
+  "author": "ben eaves",
+  "url": "https://angeal185.github.io",
+  "license": "MIT",
+  "description": "socket.io chat app",
+  "main": "server.js",
+  "dependencies": {
+    "bower": "~1.2.8",
+    "express": "~3.4.8",
+    "node-uuid": "^1.4.7",
+    "nodemon": "~1.0.13",
+    "npid": "~0.4.0",
+    "nunjucks": "^3.0.0",
+    "shrinkwrap": "~0.0.3",
+    "socket.io": "~0.9.16",
+    "underscore": "~1.5.2"
+  }
+}

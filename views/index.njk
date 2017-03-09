@@ -1,0 +1,43 @@
+{% extends 'layouts/layout.njk' %}
+{% block main %}
+<div class="row" id="main-chat-screen">
+<ul id="dropdown1" class="dropdown-content">
+	<li><a href="#" name="createRoom" data-toggle="modal" data-target="#roomModal">{{ labels.create }}</a></li>
+	<li><a href="#" name="leave" id="leave">{{ labels.leave }}</a></li>
+	<li><a href="#" name="disconnect" id="disconnect">{{ labels.kill }}</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">Chat App</a>
+    <ul class="right hide-on-med-and-down">
+	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Options  <i class="fa fa-caret-down"></i></a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="col-md-9">
+        <div id="conversation">
+            <ul id="msgs" class="list-unstyled"></ul>
+        </div>
+        <form id="chatForm" class="form-inline">
+            <div class="input-field">
+                <input type="text" class="form-control input-lg" placeholder="Your message" id="msg" maxlength="80" data-length="80"> 
+			</div>
+            <input type="submit" name="send" id="send" value="Send" class="btn btn-success btn-lg">
+            <input type="button" name="start_button" id="start_button" value="Record" onclick="startButton(event)" class="btn btn-info btn-lg">
+        </form>
+    </div>
+    <div class="col-md-3">
+        <ul id="rooms" class="list-group"></ul>
+        <ul id="people" class="list-group"></ul>
+    </div>
+    
+    <div class="col-md-2">
+        <ul class="list-unstyled" id="updates"></ul>
+    </div>
+</div>
+</div>
+{% endblock %}
+
+

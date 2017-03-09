@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+{% include "includes/login.njk" %}
+{% block main %}{% endblock %}
+{% include "includes/modal.njk" %}
+{% include "includes/js.njk" %}
+</body>
+</html>
